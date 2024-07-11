@@ -52,6 +52,4 @@ app.use('/client', clientRoutes);
 app.use('/sheet', sheetRoutes);
 app.use('/contact', contactRoutes);
 
-const handler = serverless(app);
-
-export { handler };
+export const handler = serverless(app);
