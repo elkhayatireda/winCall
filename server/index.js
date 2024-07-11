@@ -26,7 +26,7 @@ const io = initSocket(server);
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://win-call-client.vercel.app",
+    origin: "https://win-call-client.vercel.app/",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: ["content-type", "Authorization"],
     credentials: true,
