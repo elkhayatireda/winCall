@@ -35,21 +35,23 @@ app.use(
 
 
 
-mongoose.connect(process.env.MONGODB_URL).then(() => {
-  console.log('connected to database successfully');
+
+  
   server.listen(process.env.PORT, () => {
     console.log(`server is running on the port ${process.env.PORT}`);
-
+    mongoose.connect(process.env.MONGODB_URL).then(() => {
+      console.log('connected to database successfully');
   });
 })
   .catch((error) => {
     console.log(`something went wrong while connecting to databse : ${error}`);
   });
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use('/admin', adminRoutes);
 app.use('/employee', employeeRoutes);
 app.use('/client', clientRoutes);
 app.use('/sheet', sheetRoutes);
 app.use('/contact', contactRoutes);
 
-export const handler = serverless(app);
+export default app ;
