@@ -299,7 +299,7 @@ function LandingPage() {
                 </div>
                 {/* <div className="w-full pt-24 bg-[# 6200b3]" > */}
                 <div className="w-full pt-24 bg-[#23216c]" >
-                    <div className="flex items-center justify-between  gap-10 max-w-7xl mx-auto pt-24 ">
+                    <div className="flex items-center justify-between  gap-10 max-w-5xl mx-auto pt-24 ">
                       <div className='basis-1/2 flex flex-col '>
                         <h1 className='text-5xl font-extrabold text-[#fff] mb-5'>Premiere agence de confirmation au <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#fe7c02] from-[#FEC802]">gradient</span></h1>
                         <p className='text-gray-100 text-lg mb-5 pr-16'>
