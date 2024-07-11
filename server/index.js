@@ -26,7 +26,7 @@ const io = initSocket(server);
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://win-call-server.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: ["content-type", "Authorization"],
     credentials: true,
@@ -57,7 +57,8 @@ app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use('/admin', adminRoutes);
 app.use('/employee', employeeRoutes);
 app.use('/client', clientRoutes);
-app.use('/sheet', sheetRoutes);
 app.use('/contact', contactRoutes);
+app.use('/sheet', sheetRoutes);
+
 
 export default app ;
