@@ -185,7 +185,7 @@ function LandingPage() {
                         <div className={`${isScrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'} bg-[#23216c] transition-all duration-800 fixed top-0 right-0 left-0 z-50 `}>
 
              
-                <div className="flex items-center justify-between py-10 h-16 gap-10 max-w-[1200px] mx-auto">
+                <div className="flex items-center justify-between py-10 h-16 gap-10 max-w-[1150px] mx-auto">
                     <div className="h-12">
                      <img src={'/assets/logo2.png'} alt="logo" className="h-full" />
                     </div>
@@ -248,7 +248,7 @@ function LandingPage() {
                 </div> */}
                 </div>
              <div className={` bg-[#23216c] duration-300 marker:w-full z-40`}>
-                <div className="flex items-center justify-between py-10 h-16 gap-10 max-w-[1200px] mx-auto">
+                <div className="flex items-center justify-between py-10 h-16 gap-10 max-w-[1150px] mx-auto">
                     <div className="h-12">
                      <img src={'/assets/logo2.png'} alt="logo" className="h-full" />
                     </div>
@@ -299,7 +299,7 @@ function LandingPage() {
                 </div>
                 {/* <div className="w-full pt-24 bg-[# 6200b3]" > */}
                 <div className="w-full pt-24 bg-[#23216c]" >
-                    <div className="flex items-center justify-between  gap-10 max-w-[1200px] mx-auto pt-24 ">
+                    <div className="flex items-center justify-between  gap-10 max-w-[1150px] mx-auto pt-24 ">
                       <div className='basis-1/2 flex flex-col '>
                         <h1 className='text-5xl font-extrabold text-[#fff] mb-5'>Premiere agence de confirmation au <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#fe7c02] from-[#FEC802]">gradient</span></h1>
                         <p className='text-gray-100 text-lg mb-5 pr-16'>
@@ -314,7 +314,7 @@ function LandingPage() {
                     <img src={'/assets/wave.svg'} alt="logo" className="w-full" />
                 </div>
                 <div className="w-full mt-10 ">
-                    <div className="flex items-center justify-between  gap-10 max-w-[1200px] mx-auto py-24">
+                    <div className="flex items-center justify-between  gap-10 max-w-[1150px] mx-auto py-24">
                       <div className='basis-1/2 flex items-center justify-center'>
                         <img src={'/assets/uk.png'} alt="logo" className="h-full" />
                       </div>
@@ -332,7 +332,7 @@ function LandingPage() {
                 </div>
                 {/* <div className="w-full bg-[#edf3ff] pb-20"> */}
                 <div className="w-full bg-[#fff] pb-20">
-                    <div className="max-w-[1200px] mx-auto py-24 ">
+                    <div className="max-w-[1150px] mx-auto py-24 ">
                         <p className="text-sm font-extrabold text-[#FEC802]">What We Do</p>
                         <div className="flex items-start justify-between gap-16">
                                 <h4 className="text-5xl font-bold text-[#173c5f] basis-3/5">
@@ -375,7 +375,7 @@ function LandingPage() {
                     </div>
                 </div>
                 <div className="w-full bg-[#FEC802]">
-                    <div className="flex items-center justify-between gap-10 max-w-[1200px] mx-auto ">
+                    <div className="flex items-center justify-between gap-10 max-w-[1150px] mx-auto ">
                         <div className='basis-1/2 flex flex-col '>
                             <h1 className='text-[57px] font-bold text-[#000] mb-4 leading-[3.5rem]'>Premiere agence de confirmation</h1>
                             <p className='text-gray-800 text-[14px] mb-3 pr-16'>
@@ -392,7 +392,7 @@ function LandingPage() {
                     className="w-full" 
                     // style={{ backgroundImage: "url('/assets/ttten.svg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
                 >
-                    <div className="flex items-center justify-center   max-w-[1200px] mx-auto py-24">
+                    <div className="flex items-center justify-center   max-w-[1150px] mx-auto py-24">
                       
                       <div className='flex flex-col items-center'>
                         <p className="text-md font-bold text-[#FEC802] ">FEATURES</p>
@@ -505,7 +505,7 @@ function LandingPage() {
                     </div>
                 </div>
                 <div className="w-full py-36 bg-[#23216c]">
-                    <div className="flex items-start justify-between gap-10 max-w-[1200px] mx-auto">
+                    <div className="flex items-start justify-between gap-10 max-w-[1150px] mx-auto">
                         <div className='basis-2/5 flex flex-col'>
                             <p className="text-md font-bold text-[#356FC6] mb-1">STEPS</p>
                             <h1 className='text-[45px] font-bold text-[#fff] mb-4 leading-[3.5rem]'>How It Works</h1>
@@ -548,7 +548,7 @@ function LandingPage() {
                 </div>
                 {/*  */}
                 <div className="w-full py-36 bg-[#edf3ff]">
-                    <div className="flex items-start justify-between gap-10 max-w-[1200px] mx-auto">
+                    <div className="flex items-start justify-between gap-10 max-w-[1150px] mx-auto">
                         <div className='basis-2/5 flex flex-col'>
                             <p className="text-md font-bold text-[#356FC6] mb-1">STEPS</p>
                             <h1 className='text-[45px] font-bold text-[#000] mb-4 leading-[3.5rem]'>How It Works</h1>
@@ -591,7 +591,7 @@ function LandingPage() {
                 </div>
  {/* section Contact  */}
         <div className='w-full pt-24  '  id='contact'>
-                <div className='w-full max-w-[1200px] mx-auto flex flex-col items-center  px-15  '>
+                <div className='w-full max-w-[1150px] mx-auto flex flex-col items-center  px-15  '>
                    
                    <div className='flex items-center justify-center gap-16 w-full mb-14'>
                         <div className='basis-2/5 flex flex-col gap-4 py-16 px-10'>
@@ -643,7 +643,7 @@ function LandingPage() {
                 </div>                  
             </div>
                 <div className="w-full py-24 ">
-                    <div className="flex flex-col items-center max-w-[1200px] mx-auto">
+                    <div className="flex flex-col items-center max-w-[1150px] mx-auto">
                         <h4 className='text-[45px] font-bold text-[#23216c] mb-10 '>Questions & Answers</h4>
                         <div className='flex flex-col w-full px-36'>
                         {faqData.map((faq, index) => (
