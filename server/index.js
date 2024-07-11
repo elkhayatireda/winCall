@@ -12,7 +12,7 @@ import { google } from "googleapis";
 import Sheet from './models/sheet.model.js';
 import cron from "node-cron";
 import { getSocket } from './services/socket.js';
-
+import serverless from "serverless-http";
 import http from 'http';
 import { Server } from 'socket.io';
 import { initSocket } from './services/socket.js';
@@ -52,5 +52,4 @@ app.use('/client', clientRoutes);
 app.use('/sheet', sheetRoutes);
 app.use('/contact', contactRoutes);
 
-
-
+module.exports.handler = serverless(app);
