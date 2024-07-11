@@ -37,14 +37,21 @@ app.use(
 
 
   
-  server.listen(process.env.PORT, () => {
+mongoose.connect(process.env.MONGODB_URL)
+  .then(() => {
+    console.log('connected to database successfully');
+  })
+  .catch((error) => {
+    console.error(`something went wrong while connecting to database: ${error}`);
+  });
+
+server.listen(process.env.PORT, (error) => {
+  if (error) {
+    console.error(`Error starting server: ${error}`);
+  } else {
     console.log(`server is running on the port ${process.env.PORT}`);
-    mongoose.connect(process.env.MONGODB_URL).then(() => {
-      console.log('connected to database successfully');
-  });
-}).catch((error) => {
-    console.log(`something went wrong while connecting to databse : ${error}`);
-  });
+  }
+});
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use('/admin', adminRoutes);
