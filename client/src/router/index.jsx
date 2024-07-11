@@ -45,7 +45,7 @@ import AddEmployee from '@/pages/admin/add-employee';
 import Settings from '@/pages/admin/settings';
 import UpdateClient from '@/pages/admin/update-client';
 import Contacts from '@/pages/admin/contacts';
-import NotFound from '@/pages/NotFound';
+
 
 
 
@@ -139,6 +139,7 @@ export const router = createBrowserRouter([
     },
     {
         path: '*',
-        element: <NotFound />
+        element: <h1>heyyyyyy </h1>
+
     }
 ])
