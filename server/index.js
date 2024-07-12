@@ -22,8 +22,6 @@ const server = http.Server(app);
 const io = initSocket(server);
 
 
-
-app.use(express.json());
 app.use(
   cors({
     origin: "https://win-call-client.vercel.app",
@@ -32,6 +30,8 @@ app.use(
     credentials: true,
   })
 );
+app.use(express.json());
+
 
 
 

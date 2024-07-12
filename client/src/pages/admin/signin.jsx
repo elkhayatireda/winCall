@@ -18,8 +18,18 @@ export default function SignIn() {
   const navigate = useNavigate()
   const sendData = async (formData) => {
     try {
-      const { email, password } = formData; 
-      const response = await axiosClient.post('https://win-call-server.vercel.app/admin/signin', { email, password});
+      const { email, password } = formData;
+      const response = await axios.post(
+        'https://win-call-server.vercel.app/admin/signin',
+        { email, password },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          withCredentials: true, // Include credentials if necessary
+        }
+      );
+  
       if (response.status === 200) {
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('admin', true);
@@ -30,7 +40,7 @@ export default function SignIn() {
         return false;
       }
     } catch (error) {
-        return false; 
+      return false;
     }
   };
   const handleSubmit = async () => {
