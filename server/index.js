@@ -18,10 +18,6 @@ import { Server } from 'socket.io';
 import { initSocket } from './services/socket.js';
 
 const app = express();   
-const server = http.Server(app);
-const io = initSocket(server);
-
-
 app.use(
   cors({
     origin: "https://win-call-client.vercel.app",
@@ -30,12 +26,9 @@ app.use(
     credentials: true,
   })
 );
+const server = http.Server(app);
+const io = initSocket(server);
 app.use(express.json());
-
-
-
-
-
   
 mongoose.connect(process.env.MONGODB_URL)
   .then(() => {
