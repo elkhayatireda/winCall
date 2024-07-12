@@ -20,7 +20,7 @@ export default function SignIn() {
     try {
       const { email, password } = formData;
       const response = await axiosClient.post(
-        'https://win-call-server.vercel.app/admin/signin',
+        'https://win-call-server.vercel.app/api/admin/signin',
         { email, password },
       );
   

@@ -47,7 +47,7 @@ server.listen(process.env.PORT, (error) => {
 });
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
-app.use('/admin', adminRoutes);
+app.use('/api/admin', adminRoutes);
 app.use('/employee', employeeRoutes);
 app.use('/client', clientRoutes);
 app.use('/contact', contactRoutes);
