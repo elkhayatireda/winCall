@@ -22,12 +22,6 @@ export default function SignIn() {
       const response = await axios.post(
         'https://win-call-server.vercel.app/admin/signin',
         { email, password },
-        {
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          withCredentials: true, // Include credentials if necessary
-        }
       );
   
       if (response.status === 200) {
