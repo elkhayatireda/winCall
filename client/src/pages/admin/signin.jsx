@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react'
 import { FcGoogle } from "react-icons/fc"
 import { TiArrowSortedDown } from "react-icons/ti";
-import  axios  from "axios"
+import  {axiosClient}  from "../api/axios"
 import { Link, useNavigate } from 'react-router-dom';
 import { authContext } from '../../contexts/AuthWrapper';
 import { ToastContainer, toast } from 'react-toastify';
@@ -19,7 +19,7 @@ export default function SignIn() {
   const sendData = async (formData) => {
     try {
       const { email, password } = formData;
-      const response = await axios.post(
+      const response = await axiosClient.post(
         'https://win-call-server.vercel.app/admin/signin',
         { email, password },
       );
