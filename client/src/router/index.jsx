@@ -62,15 +62,15 @@ export const router = createBrowserRouter([
         element: <HostLayout />,
         children: [
             {
-                path: "/home",
+                path: "/en",
                 element: <LandingPage />
             },
             {
-                path: "/home2",
+                path: "/ar",
                 element: <LandingPage2 />
             },
             {
-                path: "/home3",
+                path: "/fr",
                 element: <LandingPage3 />
             },
             {
